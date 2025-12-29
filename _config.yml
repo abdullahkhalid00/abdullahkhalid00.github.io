@@ -1,0 +1,49 @@
+# Site Info
+title:              "Abdullah Khalid"
+description:        "A developer, aspiring blogger, and lifelong gamer."
+author_name:        "Abdullah Khalid" # change this to your name
+logo_url:           https://avatars.githubusercontent.com/u/92236052?v=4 # Get it from GitHub API: https://api.github.com/users/<username>
+
+# Site Settings
+url:                https://abdullahkhalid00.github.io # main url
+baseurl:            "" # the subpath of your site, e.g. /blog/
+permalink:          /:title # Post permalink
+timezone:           Asia/Karachi # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+mathjax:            true  # enables support for mathjax - set to 'false' to disable
+social_share_previews: true
+
+# Site Build
+highlighter:        rouge
+markdown:           kramdown
+kramdown:
+    input:          GFM
+sass:
+    style:          :compressed
+
+# Other Params
+email:              "iabdulahk@gmail.com"  # optional: contact email (used in footer)
+github:             "https://github.com/abdullahkhalid00"  # optional: GitHub profile
+linkedin:           "https://www.linkedin.com/in/abdullahkhalid00"  # optional: LinkedIn profile
+include:            [ "robots.txt" ]
+exclude:            [ "LICENSE", "README.md", "CNAME", "vendor", "Gemfile", "script" ]
+plugins:
+  - jekyll-sitemap
+
+
+
+defaults:
+  -
+    scope:
+      path:         ""
+    values:
+      layout:       "null"
+  -
+    scope:
+      type:         "pages"
+    values:
+      layout:       "page"
+  -
+    scope:
+      type:         "posts"
+    values:
+      layout:       "post"
